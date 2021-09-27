@@ -1,0 +1,148 @@
+@import "~antd/dist/antd.less";
+//@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+@primary-color: #db7f42; // primary color for all components
+@link-color: #1890ff; // link color
+@success-color: #52c41a; // success state color
+@warning-color: #faad14; // warning state color
+@error-color: #54b373; // error state color
+@font-size-base: 14px; // major text font size
+@heading-color: rgba(0, 0, 0, 0.85); // heading text color
+@text-color: rgba(0, 0, 0, 0.65); // major text color
+@text-color-secondary: rgba(0, 0, 0, 0.45); // secondary text color
+@disabled-color: rgba(0, 0, 0, 0.25); // disable state color
+@border-radius-base: 2px; // major border radius
+@border-color-base: #d9d9d9; // major border color
+@box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+  0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); // major shadow for layers
+
+@navy-color: #324e5c;
+@navy-color-secondary: #3b5767;
+@orange-color: #db7f42;
+@green-color: #54b373;
+
+html,
+body {
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.header {
+  background-color: @navy-color;
+  height: 200px;
+}
+
+.content {
+  background: #fff;
+}
+
+.content-body {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.game-container {
+  margin-top: -160px;
+  width: 462px;
+}
+
+.time-remaining {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.cell-odd {
+  width: 50px;
+  height: 50px;
+  background: @navy-color;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 6px;
+  border: solid 3px @navy-color;
+}
+
+.cell-even {
+  width: 50px;
+  height: 50px;
+  background: @navy-color-secondary;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 9px;
+  font-size: 22px;
+}
+
+.border-right {
+  margin-right: 3px;
+}
+
+.border-bottom {
+  border-bottom: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: @orange-color;
+}
+
+.board-container {
+  border: @orange-color 3px solid;
+  border-radius: 3px;
+  background: @orange-color;
+}
+
+.btn-solve,
+.ant-btn-dangerous,
+.ant-btn-lg {
+  border-radius: 5px;
+  height: 40px;
+  padding: 6.4px 15px;
+  font-size: 12px;
+  height: 52px;
+}
+
+.active-cell {
+  outline: 3px solid @orange-color;
+  position: relative;
+  z-index: 1000;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button-container > div {
+  cursor: pointer;
+  padding: 10px;
+  color: @navy-color;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#result {
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
