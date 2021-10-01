@@ -42,7 +42,7 @@ const Board = forwardRef((props, refs) => {
             className={(xIndex + yIndex) % 2 === 0 ?
               (yIndex === 2 || yIndex === 5 ? "cell-odd border-right" : "cell-odd") :
               (yIndex === 2 || yIndex === 5 ? "cell-even border-right" : "cell-even")}>
-            {y}
+            {y === 0 ? "" : y}
           </div>
         })}
         <br clear="all" />
